@@ -1,0 +1,19 @@
+// position:fixed;
+// left:0;
+// right:0;
+// bottom:13rem;
+// z-index:10;
+// padding:0 15rem;
+// height:56rem;
+.custom-tab {
+  --rv-tabbar-background-color: #141522;
+  --rv-tabbar-item-text-color: #7d7e9d;
+  --rv-tabbar-height: 80px;
+  --rv-tabbar-item-active-color: #00d676;
+  --rv-tabbar-item-font-size: 10px;
+  // --rv-tabbar-item-icon-size: 40px;
+  .tab-active {
+    background: linear-gradient(180deg, #09262a 0%, #131524 100%);
+    box-shadow: inset 0px 1px 0px 0px #00d676;
+  }
+}

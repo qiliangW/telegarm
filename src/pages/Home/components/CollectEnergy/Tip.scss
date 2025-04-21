@@ -1,0 +1,181 @@
+// .c-t-begin {
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+//   z-index: 20;
+//   .img-wrap {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 38rem;
+//     > img {
+//       width: 340rem;
+//     }
+//   }
+//   .txt-wrap {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-top: 15rem;
+//     > img {
+//       width: 34rem;
+//     }
+//     > span {
+//       font-family: Urbanist;
+//       font-size: 24rem;
+//       font-weight: 400;
+//       color: #fff;
+//       padding-left: 6rem;
+//     }
+//   }
+// }
+
+// .c-t-dwait-outer {
+//   position: absolute;
+//   z-index: 4;
+//   bottom: 83rem;
+//   left: 50%;
+//   transform: translate(-50%, 0);
+//   width: 310rem;
+//   height: 40rem;
+//   border-radius: 40rem;
+//   background: linear-gradient(
+//     259.95deg,
+//     #ffa903 -33.05%,
+//     #ff005c 0.21%,
+//     #cc00ff 91.69%
+//   );
+
+//   .c-t-dwait-wrap {
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     .txt {
+//       //styleName: body / large / bold;
+//       font-family: Urbanist;
+//       font-size: 16rem;
+//       font-weight: 700;
+//       letter-spacing: 0.2rem;
+//       color: #fff;
+//     }
+//     > img {
+//       width: 39rem;
+//       margin-left: 4rem;
+//     }
+//   }
+// }
+
+// .c-t-reward-outer {
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+//   z-index: 4;
+//   .c-t-reward-wrap {
+//     .pic {
+//       height: 38rem;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       > img {
+//         width: 340rem;
+//       }
+//     }
+//     .reward-w {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       padding-top: 16rem;
+//       position: relative;
+//       > img {
+//         width: 37rem;
+//       }
+//       .reward {
+//         font-family: Urbanist;
+//         font-size: 29rem;
+//         font-weight: 500;
+//         color: #fff;
+//         padding-left: 8rem;
+//       }
+//     }
+//   }
+// }
+
+// .c-t-end-outer {
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+//   z-index: 4;
+//   width: 294rem;
+//   height: 94rem;
+//   border-radius: 28rem;
+//   background: rgba(84, 84, 84, 0.6);
+
+//   .c-t-end-wrap {
+//     padding-top: 16rem;
+//     .pic {
+//       height: 38rem;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       > img {
+//         width: 340rem;
+//       }
+//     }
+//     .end-txt {
+//       padding-top: 3rem;
+//       font-family: Urbanist;
+//       font-size: 16rem;
+//       font-weight: 700;
+//       line-height: 22rem;
+//       letter-spacing: 0.2rem;
+//       color: #fff;
+//       text-align: center;
+//     }
+//   }
+// }
+
+// .c-t-enger-outer {
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+//   z-index: 6;
+//   .toast-t-cmsg-wrap {
+//     //公共文案提示
+//     width: 325rem;
+//     padding: 24rem 26rem;
+//     //styleName: body / large / bold;
+//     font-family: Urbanist;
+//     font-size: 16rem;
+//     font-weight: 700;
+//     line-height: 22rem;
+//     letter-spacing: 0.2rem;
+//     text-align: center;
+//     color: #fff;
+//   }
+//   .toast-t-wrap {
+//     border: 1rem solid rgb(242, 173, 255);
+//     border-radius: 28rem;
+//     background: rgb(32, 35, 42);
+//   }
+//   .txt-wrap {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-top: 15rem;
+//     > img {
+//       width: 34rem;
+//     }
+//     > span {
+//       font-family: Urbanist;
+//       font-size: 24rem;
+//       font-weight: 400;
+//       color: #fff;
+//       padding-left: 6rem;
+//     }
+//   }
+// }

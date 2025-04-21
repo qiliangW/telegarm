@@ -1,0 +1,26 @@
+.start-page-wrap {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0 20px;
+  //   height: 100vh;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  .login-box {
+    width: 100%;
+  }
+  .login-btn {
+    margin-top: 40px;
+  }
+  .login-remember {
+    margin-top: 10px;
+  }
+  .login-logo {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+  }
+  //   justify-content: center;
+  // background-color: #fff;
+}

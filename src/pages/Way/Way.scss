@@ -1,0 +1,63 @@
+.order-box-item {
+  background: #222339;
+  border-radius: 16px;
+
+  margin-top: 16px;
+  padding: 0 16px;
+  .order-title {
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    border-bottom: 1px solid #2f3042;
+    & > span:nth-child(2) {
+      // 针对第二个 span 的样式
+      color: #00d676;
+      font-size: 14px;
+    }
+  }
+  .order-content {
+    padding: 15px 0;
+    .order-content-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 15px;
+      color: #9a9aab;
+      line-height: 21px;
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    border-bottom: 1px solid #2f3042;
+  }
+  .order-oprate-btn {
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .order-btn-text {
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 500;
+      font-size: 14px;
+      color: #141522;
+      line-height: 20px;
+      background: #00d676;
+      border-radius: 18px;
+      text-align: center;
+      width: 96px;
+      height: 36px;
+    }
+    .edit {
+      background-color: #2f3045;
+      color: #cecddd;
+      margin-right: 10px;
+    }
+  }
+  &:last-child {
+    margin-bottom: 16px;
+  }
+}

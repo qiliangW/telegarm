@@ -1,0 +1,14 @@
+.order-box {
+  padding-top: 40px;
+  width: 100%;
+  // box-shadow: inset 0px -1px 0px 0px #272938;
+  --rv-tab-text-color: #afafcd;
+  --rv-tab-active-text-color: #00d676;
+  --rv-tabs-bottom-bar-color: #00d676;
+  --rv-tabs-nav-background-color: #272938;
+  .order-items {
+    padding: 0 24px;
+  }
+  flex: 1;
+  overflow-y: auto;
+}

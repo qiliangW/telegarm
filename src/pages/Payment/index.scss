@@ -1,0 +1,104 @@
+.pay-box {
+  .update-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    width: 326px;
+    transform: translateX(-50%);
+  }
+  --rv-cell-border-color: #272938;
+  // filter: blur(50px);
+  --rv-cell-background-color: #141522;
+  // --rv-cell-line-height: 100px;
+  background-color: #141522;
+  padding-top: 40px;
+  height: 100vh;
+  .rv-input__control::placeholder {
+    font-size: 14px;
+    color: #474a50;
+  }
+  .rv-input__control {
+    color: #fff;
+    font-size: 14px;
+    font-family: PingFangSC, PingFang SC;
+    line-height: 35px;
+  }
+  .pay-custom {
+    border-radius: 6px;
+  }
+  // overflow: auto;
+}
+
+.payment-content {
+  padding: 24px 24px;
+  .qr-code {
+    height: 280px;
+    background: radial-gradient(90% 66% at 97% -3%, #385145 0%, #222339 100%);
+    border-radius: 16px;
+
+    border-image: linear-gradient(
+        180deg,
+        rgba(60, 101, 103, 1),
+        rgba(42, 43, 69, 1)
+      )
+      2 2;
+  }
+  .payment-tip {
+    margin-top: 24px;
+    background: #222339;
+    border-radius: 16px;
+    height: 200px;
+    padding: 16px;
+    padding-top: 24px;
+    .title {
+      font-weight: 400;
+      font-size: 14px;
+      color: #ffffff;
+      line-height: 20px;
+      text-align: left;
+      font-style: normal;
+    }
+    .usdt-address {
+      background: rgba(0, 214, 118, 0.08);
+      border-radius: 10px;
+      font-size: 13px;
+      color: #00d676;
+      line-height: 18px;
+      text-align: left;
+      margin-top: 10px;
+      height: 56px;
+      padding: 10px 16px;
+      margin-bottom: 16px;
+    }
+    .pay-notice {
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      font-size: 12px;
+      color: #9a9aab;
+      line-height: 20px;
+      text-align: left;
+      font-style: normal;
+      .tip1,
+      .tip2 {
+        display: flex;
+        align-items: center;
+        p {
+          margin-left: 5px;
+        }
+        .no {
+          width: 16px;
+          height: 16px;
+          background: #9a9aab;
+          border-radius: 6px;
+          font-size: 12px;
+          color: #141522;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // margin-left: 2px;
+        }
+        display: flex;
+      }
+    }
+  }
+}

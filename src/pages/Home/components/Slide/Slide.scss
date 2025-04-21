@@ -1,0 +1,135 @@
+.c-slide-outer{
+    padding:16rem 18rem 0;
+
+    .c-slider-wrap{
+        margin-top:10rem;
+        height:124rem;
+        background: rgba(62, 41, 75, 1);
+        border: 0.5rem solid rgba(242, 173, 255, 1);
+        position: relative;
+        border-radius:28rem;
+        user-select: none;
+        .c-bg,
+        .c-txt-1,
+        .c-txt-2,
+        .c-tip,
+        .center-line,
+        .dash-line,
+        .start-btn{
+            position: absolute;
+        }
+        .start-btn{
+            width: 87rem;
+            height: 26rem;
+            border-radius:13rem;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(87.68% 87.68% at 95.36% 14.36%, #FFD840 0%, #F3ACFF 55.86%, #8AECFF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+            font-family: PingFang SC;
+            font-size: 12rem;
+            font-weight: 500;
+            color:#000;
+            left:50%;
+            top:50%;
+            transform: translate(-50%, -50%);
+            z-index:4;
+            cursor: pointer;
+            >img{
+                height:26rem;
+            }
+        }
+        .c-bg{
+            right:0;
+            bottom:0;
+            width:128rem;
+        }
+        .c-txt-1,
+        .c-txt-2{
+            font-family: Urbanist;
+            font-size: 13rem;
+            font-weight: 600;
+            line-height: 20rem;
+            left:50%;
+            transform: translate(-50%, 0);
+        }
+        .c-txt-1{
+            top:2rem;
+            background: radial-gradient(145.89% 1725.93% at 95.36% 14.36%, #FFD840 0%, #F3ACFF 55.86%, #8AECFF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-clip: text;
+
+        }
+        .c-txt-2{
+            bottom:2rem;
+            color: rgba(255, 255, 255, 1);
+        }
+        .c-tip{
+            font-family: Urbanist;
+            color: rgba(255, 0, 245, 0.48);
+
+            font-size: 13rem;
+            font-weight: 400;
+            line-height: 20rem;
+            white-space: nowrap;
+            text-align: left;
+            left:20rem;
+            top:50%;
+            transform: translate(0, -50%);
+        }
+        .center-line{
+            top:50%;
+            transform: translate(0, -50%);
+            left:12rem;
+            right:16rem;
+            height:1rem;
+            background: linear-gradient(90deg, rgba(210, 194, 229, 0.09) 0%, #D2C2E5 53%, rgba(210, 194, 229, 0.09) 100%);
+            z-index:4;
+        }
+        .dash-line{
+            left:12rem;
+            right:16rem;
+            border-bottom:0.5rem dashed  rgba(175, 175, 175, 0.2);
+            z-index:4;
+            &.dash-line1{
+                top:13rem;
+            }
+            &.dash-line2{
+                bottom:30rem;
+            }
+        }
+    }
+
+    .progress-ps-wrap{
+        position: relative;
+        .emo-wrap{
+            position: absolute;
+            left:0;
+            right:0;
+            top:-23rem;
+            height:23rem;
+            z-index:2;
+            .emo{
+                position: absolute;
+                >img{
+                    width:23rem;
+                }
+                &.emo1{
+                    left:-2rem;
+                }
+                &.emo2{
+                    left:50%;
+                    >img{
+                        width:21rem;
+                    }
+                }
+                &.emo3{
+                    left:75%;
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,80 @@
+.e-task-item-wrap{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 78rem;
+    border-radius: 28rem;
+    padding-left:20rem;
+    padding-right:20rem;
+    border: 0.5rem solid rgba(242, 173, 255, 1);
+    margin-bottom:14rem;
+
+    .l{
+       .title{
+            font-family: Urbanist;
+            font-size: 16rem;
+            font-weight: 700;
+            line-height: 22rem;
+            letter-spacing: 0.2rem;
+            color:#fff;
+            max-width: 230rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+       } 
+       .token-wrap{
+            padding-top:2rem;
+            display:flex;
+            align-items: center;
+            >img{
+                width:15rem;
+            }
+            .token{
+                font-family: Urbanist;
+                font-size: 12rem;
+                font-weight: 700;
+                line-height: 1;
+                letter-spacing: 0.2rem;
+                margin-left:7rem;
+                color:#fff;
+            }
+       }
+    }
+    .btn-wrap{
+        >img{
+            width:34rem;
+            margin-right:7rem;
+        }
+        .btn{
+            background: radial-gradient(87.68% 87.68% at 95.36% 14.36%, #FFD840 0%, #F3ACFF 55.86%, #8AECFF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+            width: 60rem;
+            height: 26rem;
+            border-radius:13rem;
+            display:inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Urbanist;
+            font-size: 12rem;
+            font-weight: 500;
+            line-height: 1;
+            letter-spacing: -0.24rem;
+            cursor:pointer;
+            color:#000;
+        }
+        .txt{
+            width: 60rem;
+            height: 26rem;
+            display:inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Urbanist;
+            font-size: 16rem;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+            color:#fff;
+            >span{
+                color:rgba(166, 157, 157, 1);
+            }
+        }
+    }
+} 

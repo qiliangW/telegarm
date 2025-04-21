@@ -1,0 +1,50 @@
+
+
+.upgrade-suc-u-outer{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index:4;
+    border-radius:28rem;
+    background: rgba(0, 0, 0, 0.7);
+
+    .upgrade-suc-u-wrap{
+        padding:35rem 30rem 0;
+        .txt{
+            font-family: Urbanist;
+            font-size: 13rem;
+            font-weight: 700;
+            line-height: 17rem;
+            text-align: center;
+            color:#fff;
+        }
+        .btns{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top:12rem;
+            >span{
+                flex:1;
+                height: 46rem;
+                border-radius: 23rem;
+                background: radial-gradient(87.68% 87.68% at 95.36% 14.36%, #FFD840 0%, #F3ACFF 55.86%, #8AECFF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+                font-family: Urbanist;
+                font-size: 15rem;
+                font-weight: 700;
+                color:#000;
+                cursor: pointer;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                &.confirm{
+                    margin-left:13rem;
+                }
+
+            }
+        }
+    }
+}
+

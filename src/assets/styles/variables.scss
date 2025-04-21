@@ -1,0 +1,8 @@
+@mixin text-radial-gradient {//文字径向渐变
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 98% 98%;
+    background-position: 50% 50%;
+}

@@ -1,0 +1,54 @@
+.plan-box-wrap {
+  .rv-cell {
+    width: 100%;
+    padding: 0;
+  }
+  padding-top: 58px;
+  background-color: #141522;
+  height: 100vh;
+  overflow-y: auto;
+  --rv-popover-dark-background-color: #222339;
+
+  --rv-popover-action-width: 260px;
+  --rv-input-text-color: #cdccdc;
+  --rv-cell-text-color: #7d7e9d;
+  --rv-cell-background-color: #141522;
+  --rv-cell-label-line-height: 64px;
+  --rv-cell-vertical-padding: 20px 0;
+  --rv-tab-text-color: #afafcd;
+  --rv-tab-active-text-color: #00d676;
+  --rv-tabs-bottom-bar-color: #00d676;
+  --rv-tabs-nav-background-color: #272938;
+  --rv-divider-border-color: #131524;
+  --rv-picker-background-color: #171926;
+  // --rv-picker-option-text-color: #7d7e9d;
+  // --rv-cell-border-color: #272938;
+  .rv-tabs__content {
+    margin-top: 24px;
+    padding: 0 24px;
+  }
+  .rv-input__control::placeholder {
+    font-size: 12px;
+    color: #7d7e9d;
+  }
+  .rv-input__control {
+    font-size: 15px;
+  }
+  .new-order-box-item {
+    color: #7d7e9d;
+    font-size: 15px;
+    border-bottom: 1px solid #272938;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .new-order-time {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+  }
+  .plan-box {
+    padding: 24px 24px;
+  }
+}

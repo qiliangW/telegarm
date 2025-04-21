@@ -1,0 +1,33 @@
+.video-v-outer{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 23rem;
+    width:299rem;
+    height:299rem;
+    overflow:hidden;
+
+    .video-v-wrap,
+    .video-bg{
+        position: absolute;
+        left:0;
+        top:0;
+        width:299rem;
+        height:299rem;
+    }
+    .video-v-wrap{
+        z-index:2;
+    }
+    .video-bg{
+        z-index:1;
+    }
+    .mask{
+        position: absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        background-color: rgba(0,0,0,.6);
+    }
+}

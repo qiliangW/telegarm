@@ -1,0 +1,73 @@
+.earn-page-wrap{
+    width:100%;
+   
+    .banner-wrap{
+        margin-bottom:10rem;
+        >img{
+            width:100%;
+        }
+    }
+
+    .sign-outer{
+        padding:10rem 18rem 0;
+        .progress-d-num-wrap{
+            position: absolute;
+            bottom:16rem;
+            width:40rem;
+            height:18rem;
+            display:inline-flex;
+            justify-content: center;
+            font-family: Urbanist;
+            font-size: 13rem;
+            line-height:14rem;
+            font-weight: 700;
+            color:#fff;
+            background:url('@/assets/imgs/earn/icon-progress.png') no-repeat center;
+            background-size:40rem 18rem;
+            margin-left:-16rem;
+        }
+
+        .sign-btn-wrap{
+            padding-top:22rem;
+            display:flex;
+            justify-content: center;
+             .sign-btn{
+                width: 168rem;
+                height: 40rem;
+                border-radius:20rem;
+                background: radial-gradient(87.68% 87.68% at 95.36% 14.36%, #FFD840 0%, #F3ACFF 55.86%, #8AECFF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+                font-family: Urbanist;
+                font-size: 16rem;
+                font-weight: 700;
+                line-height: 1;
+                letter-spacing: 0.20000000298023224px;
+                display:inline-flex;
+                align-items: center;
+                justify-content: center;
+                cursor:pointer;
+                color:#000;
+                transition: all .3s;
+                &.disabled{
+                    opacity: .4;
+                }
+            }
+        }
+       
+    }
+
+    .tasks-outer{
+        padding-top:20rem;
+        .task-title{
+            padding-left:16rem;
+            font-family: Urbanist;
+            font-size: 20rem;
+            font-weight: 700;
+            line-height: 28rem;
+            color:#fff;
+        }
+    }
+   
+
+   
+}

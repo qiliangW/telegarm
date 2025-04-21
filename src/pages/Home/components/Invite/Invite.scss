@@ -1,0 +1,46 @@
+.c-invite-wrap{
+    display: flex;
+    height:60rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:18rem;
+    padding-right:12rem;
+    margin-top:12rem;
+    margin-bottom:14rem;
+    cursor: pointer;
+    .l{
+        position: relative;
+        >img{
+            width:290rem;
+        }
+        .txt{
+            position: absolute;
+            left:15rem;
+            top:50%;
+            transform: translate(0, -50%);
+            font-family: Urbanist;
+            font-size: 18rem;
+            letter-spacing: -0.24rem;
+            color:#fff;
+
+            
+            font-weight: 800;
+            line-height: 15rem;
+        }
+    }
+    .r{
+        margin-bottom: 10rem;
+        opacity: .4;
+        >img{
+            width:46rem;
+        }
+        .txt{
+            font-family: Urbanist;
+            font-size: 12rem;
+            font-weight: 700;
+            line-height: 1;
+            color:#fff;
+            margin-top:-6rem;
+        }
+    }
+}

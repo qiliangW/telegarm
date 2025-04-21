@@ -1,0 +1,13 @@
+.navbar-n-wrap{
+    height:58rem;
+    position: relative;
+    .icon-back-wrap{
+        cursor: pointer;
+        position: absolute;
+        left:18rem;
+        top:20rem;
+        .icon-back{
+            width:28rem;
+        }
+    }
+}

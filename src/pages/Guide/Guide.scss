@@ -1,0 +1,261 @@
+.guide-page-g-wrap{
+    width: 100%;
+    position: relative;
+    padding-bottom:79rem;
+    .bg{
+        width:100%;
+    }
+    .guide-top-g-wrap{
+        position: relative;
+    }
+    .guide-col-c-wrap{
+        position: relative;
+        z-index:1;
+        &.act{
+            .collect-wrap{
+                z-index:12;
+            }
+        }
+    }
+    .guide-mask{
+        position: absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        z-index:11;
+        background-color: rgba(0,0,0,.7);
+    }
+    .guide-bot-mask{
+        position: fixed;
+        left:0;
+        width:100%;
+        bottom:0;
+        height:69rem;
+        z-index:11;
+        background-color: rgba(0,0,0,.7);
+    }
+
+    .collect-wrap { //收集按钮部分
+      
+      position: absolute;
+      z-index: 4;
+      left: 28rem;
+      bottom: 10rem;
+      background: url('@/assets/imgs/play/icon-collect-bg.png') no-repeat;
+      background-size: 80rem 62rem;
+      width: 80rem;
+      height: 62rem;
+      padding: 6rem 7rem 0;
+
+
+      .energy-wrap {
+        background-color: #9e41ff;
+        height: 16rem;
+        border-radius: 8rem;
+        padding-left: 11rem;
+        padding-right: 2rem;
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        > img {
+          height: 13rem;
+          margin-right: 4rem;
+        }
+        .num-wrap {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          flex: 1;
+          .num {
+            font-family: Urbanist;
+            font-size: 12rem;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1;
+          }
+          .time {
+            font-family: Urbanist;
+            font-size: 4rem;
+            font-weight: 400;
+            color: #fff;
+            line-height: 1;
+          }
+        }
+      }
+      .collect-btn {
+        margin-top: 4rem;
+        font-family: Urbanist;
+        font-size: 17rem;
+        font-weight: 700;
+        line-height: 1;
+        padding: 6rem 0;
+        cursor: pointer;
+        color: #000;
+        text-align: center;
+      }
+    }
+
+    .guide-pic1-p-wrap{//第一个图
+        position: absolute;
+        top:74rem;
+        left:50%;
+        transform: translate(-50%, 0);
+        z-index:11;
+        >img{
+            width:374rem;
+        }
+    }
+    .gender-radio-g-outer{
+      position: absolute;
+      right: 25rem;
+      top: 42rem;
+      z-index:4;
+      &.act{
+        z-index:11;
+      }
+      
+    }
+    .guide-step-s-wrap{
+        width: 290px;
+        height: 70px;
+        padding:0 15rem;
+        border-radius: 16px;
+        display: inline-flex;
+        align-items: center;
+        background: radial-gradient(122.73% 122.73% at 95.36% 14.36%, #D9A9FF 0%, #F3ACFF 55.86%, #8AECFF 100%);
+        box-shadow: 0px 0px 14.616px 0px #FF70D2, 0px 0px 8.352px 0px #FF70D2, 0px 0px 4.872px 0px #FF70D2, 0px 0px 2.436px 0px #FFF, 0px 0px 0.696px 0px #FFF, 0px 0px 0.348px 0px #FFF;
+
+        position: absolute;
+        z-index:11;
+        &.guide-step-s-wrap1{
+            bottom:111rem;
+            left:25rem;
+            .img-wrap{
+                left:38rem;
+                top:63rem;
+            }
+            .star{
+                top:-23rem;
+                right:-27rem;
+            }
+        }
+        &.guide-step-s-wrap2{
+            top:100rem;
+            right:25rem;
+            .img-wrap{
+                right:16rem;
+                top:-37rem;
+                transform:rotate(180deg) ;
+            }
+            .star{
+                left: -23rem;
+                bottom: -32rem;
+            }
+        }
+        &.guide-step-s-wrap3{
+            width:310rem;
+            height:auto;
+            padding:10rem 6rem 10rem 10rem;
+            top:-88rem;
+            left:50%;
+            transform: translate(-50%,0);
+           
+            .img-wrap{
+                bottom:-40rem;
+                left:50%;
+                transform: translate(-50%,0);
+            }
+            .star{
+                right: -29rem;
+                top: -24rem;
+            }
+        }
+        .txt{
+            font-size: 16rem;
+            font-weight: 700;
+            line-height: 22rem;
+            letter-spacing: 0.2rem;
+            color:#000;
+        }
+        .img-wrap{
+            width:16rem;
+            height:49rem;
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            >img{
+                width:160rem;
+                position: absolute;
+                top:50%;
+                left:-48rem;
+                transform: translate(0, -50%);
+            }
+        }
+        .star{
+            position: absolute;
+            >img{
+                width:38rem;
+            }
+        }
+
+    }
+    .guide-slide-g-wrap{
+        position: relative;
+        z-index:2;
+        &.act{
+            .c-slide-outer{
+                position: relative;
+                z-index:12;
+            }
+        }
+        &.low{
+            z-index: 0;
+        }
+       
+    }
+    .guide-reward-r-wrap{
+        position: absolute;
+        z-index:12;
+        transform: translate(-50%, -50%);
+        left:50%;
+        top:50%;
+        >div{
+            align-items: center;
+            justify-content: center;
+            display:flex;
+        }
+        .pic-wrap{
+            width:261rem;
+            height:266rem;
+            >img{
+                width:261rem;
+            }
+        }
+        .reward{
+            height:45rem;
+            margin-top:-28rem;
+            >img{
+                width:37rem;
+            }
+            >span{
+                font-family: PingFang SC;
+                font-size: 29rem;
+                font-weight: 500;
+                color:#fff;
+                padding-left:7rem;
+            }
+        }
+        .txt{
+            width:270rem;
+            height:44rem;
+            margin-top:20rem;
+            >img{
+                width:370rem;
+            }
+        }
+    }   
+
+}

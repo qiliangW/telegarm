@@ -1,0 +1,32 @@
+.c-progress-outer{
+    position: relative;
+    .c-progress-wrap{
+        width:100%;
+        height:10rem;
+        background: #1F1C1C;
+        box-shadow: -5.23rem 1.05rem 4.18rem 0rem #D9AAFF40 inset;
+        box-shadow: 1.05rem 1.05rem 4.18rem 0rem #CFB1FF inset;
+        border: 1rem solid #4C4C4C;
+        border-radius:5rem;
+        overflow:hidden;
+        position: relative;
+
+        .c-progress{
+            position: absolute;
+            left:4rem;
+            right:4rem;
+            top:50%;
+            transform: translate(0, -50%);
+            height:6rem;
+            .c-progress-inner{
+                width:100%;
+                height:100%;
+                background: linear-gradient(to right, #FFEAEA -24.66%, #FF6BFA 99.92%);
+                box-shadow: -5.23rem 1.05rem 4.18rem 0rem rgba(217, 170, 255, 0.25) inset;
+                box-shadow: 1.05rem 1.05rem 4.18rem 0rem rgba(207, 177, 255, 1) inset;
+                border-radius:3rem;
+
+            }
+        }
+    }
+}

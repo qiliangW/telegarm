@@ -1,0 +1,193 @@
+// .def-toast-dt-outer{
+//     // position: fixed;
+//     // left:50%;
+//     // top:50%;
+//     // transform: translate(-50%, -50%);
+//     // z-index:20;
+//     >div{
+//         left:50%!important;
+//         right:initial!important;
+//         top:50%!important;
+//         transform: translate(-50%, -50%)!important;
+//     }
+//     .toast-t-wrap{
+//         border: 1rem solid rgba(242, 173, 255, 1);
+//         border-radius:28rem;
+//         background: rgba(32, 35, 42, 1);
+
+//         &.toast-t-guide-wrap{//引导奖励
+//             width:325rem;
+//             padding:20rem 8rem;
+//             display:flex;
+//             align-items: center;
+//             >img{
+//                 width:21rem;
+//             }
+//             .txt{
+//                 font-family: Urbanist;
+//                 font-size: 16rem;
+//                 font-weight: 700;
+//                 line-height: 22rem;
+//                 letter-spacing: 0.2rem;
+//                 padding-left:6rem;
+//                 color:#fff;
+//             }
+//         }
+
+//         &.toast-t-cmsg-wrap{//公共文案提示
+//             width:325rem;
+//             padding:24rem 26rem;
+//             //styleName: body / large / bold;
+//             font-family: Urbanist;
+//             font-size: 16rem;
+//             font-weight: 700;
+//             line-height: 22rem;
+//             letter-spacing: 0.2rem;
+//             text-align: center;
+//             color:#fff;
+
+//         }
+//         &.toast-t-no-energy-outer{
+//             width:308rem;
+//             padding:12rem 8rem 12rem 37rem;
+//             display:flex;
+//             align-items: center;
+//             // justify-content: center;
+//             >img{
+//                 width:21rem;
+//             }
+//             .txt{
+//                 font-family: Urbanist;
+//                 font-size: 16rem;
+//                 font-weight: 700;
+//                 line-height: 22rem;
+//                 padding-left:21rem;
+//                 color:#fff;
+//             }
+//         }
+//     }
+
+//     .toast-t-guide-outer{//引导奖励
+//         .energy{
+//             display:flex;
+//             align-items: center;
+//             justify-content: center;
+//             >img{
+//                 width:24rem;
+//                 margin-top:10rem;
+//             }
+//             >span{
+//                 font-family: Urbanist;
+//                 font-size: 29rem;
+//                 font-weight: 400;
+//                 line-height: 45rem;
+//                 color:#fff;
+//                 padding-left:4rem;
+//             }
+//         }
+//     }
+
+//     .toast-t-collect-outer{//收集能量弹窗
+//         .toast-t-collect-wrap{
+
+//             padding:12rem 22rem 12rem 12rem;
+//             display:flex;
+//             align-items: center;
+//             >img{
+//                 width:21rem;
+//             }
+//             .txt{
+//                 font-family: Urbanist;
+//                 font-size: 16rem;
+//                 font-weight: 700;
+//                 line-height: 22rem;
+//                 letter-spacing: 0.2rem;
+//                 padding-left:13rem;
+//                 color:#fff;
+//                 white-space: nowrap;
+//             }
+//         }
+//         .energy{
+//             display:flex;
+//             align-items: center;
+//             justify-content: center;
+//             padding-top:20rem;
+//             >img{
+//                 width:36rem;
+//             }
+//             >span{
+//                 font-family: Urbanist;
+//                 font-size: 29rem;
+//                 font-weight: 400;
+//                 line-height: 45rem;
+//                 color:#fff;
+//                 padding-left:15rem;
+//             }
+//         }
+//     }
+
+//     .toast-t-level-fail-outer{//选择级别时提示
+//         .toast-t-level-wrap{
+//             padding:0 15rem;
+//             height:46rem;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             >img{
+//                 width:21rem;
+//             }
+//             .txt{
+//                 font-family: Urbanist;
+//                 font-size: 16rem;
+//                 font-weight: 700;
+//                 letter-spacing: 0.2rem;
+//                 margin-left:11rem;
+//                 color:#fff;
+//                 white-space: nowrap;
+//             }
+//         }
+//     }
+
+//     .toast-t-sign-suc-outer{//签到成功弹窗
+//         .toast-t-sign-wrap{
+
+//             padding:12rem 22rem 12rem 12rem;
+//             display:flex;
+//             align-items: center;
+//             >img{
+//                 width:21rem;
+//             }
+//             .txt{
+//                 font-family: Urbanist;
+//                 font-size: 16rem;
+//                 font-weight: 700;
+//                 line-height: 22rem;
+//                 letter-spacing: 0.2rem;
+//                 padding-left:13rem;
+//                 color:#fff;
+//                 white-space: nowrap;
+//             }
+//         }
+//         .energy{
+//             display:flex;
+//             align-items: center;
+//             justify-content: center;
+//             padding-top:25rem;
+//             >img{
+//                 width:33rem;
+//                 &.token{
+//                     width:37rem;
+//                 }
+//             }
+//             >span{
+//                 font-family: Urbanist;
+//                 font-size: 29rem;
+//                 font-weight: 500;
+//                 line-height: 45rem;
+//                 color:#fff;
+//                 padding-left:7rem;
+//             }
+//         }
+//     }
+
+// }

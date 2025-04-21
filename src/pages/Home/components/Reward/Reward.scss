@@ -1,0 +1,215 @@
+.open-reward-o-outer{
+    position: fixed;
+    z-index:20;
+    background-color: rgba(0,0,0,.8);
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      @keyframes zoomR {
+        0%{
+        transform: scale(1);
+        }
+        50%{
+        transform: scale(.9);
+        }
+        100%{
+        transform: scale(1);
+        }
+    }
+
+    .open-reward-o-wrap{
+        width:346rem;
+        .title{
+            font-family: Urbanist;
+            font-size: 34rem;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 44rem;
+            height:44rem;
+            text-align: center;
+            background: radial-gradient(78.49% 126.46% at 98.41% 69.77%, #CDAFFF 0%, #F6C5FF 41.99%, #FFFB97 73.31%, #00FFF0 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            >img{
+                height:100%;
+            }
+        }
+        .tip{
+            margin-top:4rem;
+            font-family: Urbanist;
+            font-size: 24rem;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 31rem;
+            text-align: center;
+            color:#fff;
+            height:31rem;
+            >img{
+                height:100%;
+            }
+        }
+        .pic-wrap{
+            width:346rem;
+            height:346rem;
+            position: relative;
+            .bg{
+                position: absolute;
+                left:0;
+                top:0;
+                width:100%;
+                height:100%;
+                animation-duration: 5s;
+            }
+            .pic{
+                position: absolute;
+                z-index:2;
+                top:52rem;
+                left:36rem;
+                width:238rem;
+                animation-name: zoomR;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out ;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+            }
+        }
+        .btn-wrap{
+            padding-top:19rem;
+            display:flex;
+            justify-content: center;
+            .btn{
+                width: 167rem;
+                height: 40rem;
+                border-radius: 20rem;
+                background: radial-gradient(87.68% 87.68% at 95.36% 14.36%, #FFD840 0%, #F3ACFF 55.86%, #8AECFF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+                font-family: Urbanist;
+                font-size: 16rem;
+                font-weight: 700;
+                text-align: center;
+                color:#000;
+                display:inline-flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                >img{
+                    height:40rem;
+                }
+            }
+        }
+    }
+}
+
+.win-reward-w-outer{
+    position: fixed;
+    z-index:20;
+    background-color: rgba(0,0,0,1);
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    .win-reward-w-wrap{
+        width:368rem;
+        height:622rem;
+        background: url('@/assets/imgs/play/reward/win_bg.png') no-repeat center;
+        background-size: 368rem 622rem;
+        .title{
+            padding-top:89rem;
+            font-family: Urbanist;
+            font-size: 34rem;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 44rem;
+            text-align: center;
+            background: radial-gradient(78.49% 126.46% at 98.41% 69.77%, #CDAFFF 0%, #F6C5FF 41.99%, #FFFB97 73.31%, #00FFF0 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            >img{
+                height:44rem;
+            }
+        }
+        .tip{
+            margin-top:4rem;
+            font-family: Urbanist;
+            font-size: 24rem;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 31rem;
+            text-align: center;
+            color:#fff;
+            height:31rem;
+            >img{
+                height:100%;
+            }
+        }
+        .reward{
+            position: absolute;
+            top:291rem;
+            left:50%;
+            transform: translate(-50%, 0);
+            width: 130rem;
+            height: 130rem;
+            .icon{
+                right:-112rem;
+                top:-158rem;
+                position: absolute;
+                width:148rem;
+                animation-delay: .8s;
+                animation-duration: 0.8s;
+            }
+            .pic-wrap{
+                width: 130rem;
+                height: 130rem;
+                border-radius: 65rem;
+                background: rgba(182, 23, 237, 0.74);
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                .token{
+                    width:65rem;
+                    margin-top:24rem;
+                }
+                .num{
+                    font-family: Urbanist;
+                    font-size: 22rem;
+                    font-weight: 700;
+                    line-height: 30rem;
+                    color:#fff;
+                    text-align: center;
+                }
+            }
+        }
+        .btn-wrap{
+            display:flex;
+            justify-content: center;
+            position: absolute;
+            left:0;
+            right:0;
+            top:534rem;
+            .btn{
+                width: 167rem;
+                height: 40rem;
+                border-radius: 20rem;
+                background: radial-gradient(87.68% 87.68% at 95.36% 14.36%, #FFD840 0%, #F3ACFF 55.86%, #8AECFF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+                font-family: Urbanist;
+                font-size: 16rem;
+                font-weight: 700;
+                text-align: center;
+                color:#000;
+                display:inline-flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,96 @@
+.join-tgc-j-outer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  .join-tgc-j-wrap {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    border-radius: 20rem 20rem 0 0;
+    border: 1rem solid rgba(242, 173, 255, 1);
+    background: rgba(24, 26, 32, 1);
+
+    .tit {
+      font-family: 'Urbanist';
+      font-size: 21rem;
+      font-weight: 700;
+      line-height: 27rem;
+      text-align: center;
+      padding-top: 20rem;
+      color: #fff;
+    }
+    .close {
+      position: absolute;
+      right: 19rem;
+      top: 19rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 17rem;
+      width: 34rem;
+      height: 34rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      > img {
+        width: 14rem;
+      }
+    }
+    .tg-icon {
+      display: flex;
+      justify-content: center;
+      padding-top: 46rem;
+      > img {
+        width: 116rem;
+      }
+    }
+    .reward-wrap {
+      padding-top: 20rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > img {
+        width: 37rem;
+      }
+      > span {
+        font-family: 'Urbanist';
+        font-size: 29rem;
+        font-weight: 500;
+        color: #fff;
+        padding-left: 7rem;
+      }
+    }
+    .btns {
+      padding: 23rem 22rem 30rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > span {
+        background: radial-gradient(
+            87.68% 87.68% at 95.36% 14.36%,
+            #ffd840 0%,
+            #f3acff 55.86%,
+            #8aecff 100%
+          )
+          /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        width: 158rem;
+        height: 54rem;
+        border-radius: 28rem;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Urbanist';
+        font-size: 17rem;
+        font-weight: 700;
+        color: #000;
+      }
+    }
+  }
+}

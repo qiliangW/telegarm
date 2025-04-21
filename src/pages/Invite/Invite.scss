@@ -1,0 +1,231 @@
+.invite-i-outer {
+  width: 100%;
+  .banner-wrap {
+    height: 294rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top:-50rem;
+    > img {
+      width: 100%;
+    }
+    .invite-title {
+      font-family: Urbanist;
+      font-size: 25rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.23rem;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 28rem;
+      position: absolute;
+      top: 224rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+      white-space: nowrap;
+    }
+  }
+  @keyframes zoomR {
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(.9);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+
+  .invite-reward-ii-wrap {
+    height: 106rem;
+    position: relative;
+    cursor: pointer;
+    animation-name: zoomR;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+    .top-tit-wrap {
+      display: flex;
+      justify-content: center;
+      .tit {
+        background: radial-gradient(
+            87.68% 87.68% at 95.36% 14.36%,
+            #ffd840 0%,
+            #f3acff 55.86%,
+            #8aecff 100%
+          )
+          /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        width: 216rem;
+        height: 106rem;
+        line-height: 26rem;
+        border-radius: 20rem;
+        font-family: Urbanist;
+        font-size: 12rem;
+        font-weight: 700;
+        display: inline-flex;
+        justify-content: center;
+        color: #000;
+      }
+    }
+
+    .invite-reward-wrap {
+      position: absolute;
+      width: 342rem;
+      height: 84rem;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background: rgba(32, 35, 42, 1);
+      border: 1rem solid rgba(242, 173, 255, 1);
+      border-radius: 20rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .invite-info {
+        .icon {
+          height: 22rem;
+        }
+        .num {
+          margin-left: 10rem;
+          font-family: Urbanist;
+          font-size: 36rem;
+          font-weight: 700;
+          
+          background: radial-gradient(144.49% 119.36% at 105.68% 31.4%, #FFD840 0%, #F3ACFF 55.86%, #8AECFF 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .unit {
+          margin-left: 8rem;
+          font-family: Urbanist;
+          font-size: 10rem;
+          font-weight: 100;
+         
+            background: radial-gradient(144.49% 119.36% at 105.68% 31.4%, #FFD840 0%, #F3ACFF 55.86%, #8AECFF 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .invite-num {
+        position: absolute;
+        font-family: Urbanist;
+        font-size: 10rem;
+        font-weight: 100;
+        line-height: 1;
+        right: 44rem;
+        bottom: 8rem;
+
+        background: radial-gradient(144.49% 119.36% at 105.68% 31.4%, #FFD840 0%, #F3ACFF 55.86%, #8AECFF 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  .invite-list-wrap {
+    padding: 16rem 18rem 0 4rem;
+    .invite-item-wrap {
+      margin-bottom: 12rem;
+      background: rgba(32, 35, 42, 1);
+      height: 64rem;
+      border-radius: 28rem;
+      padding-left: 26rem;
+      padding-top: 14rem;
+      padding-right: 10rem;
+      .invite-item-tit {
+        font-family: Urbanist;
+        font-size: 16rem;
+        font-weight: 700;
+        line-height: 22rem;
+        // letter-spacing: 0.2rem;
+        color: #fff;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .invite-item-cont {
+        font-family: Urbanist;
+        font-size: 12rem;
+        font-weight: 400;
+        line-height: 15rem;
+        // letter-spacing: -0.24rem;
+        color: #fff;
+      }
+    }
+  }
+
+  .invite-btns-wrap {
+    padding: 0 18rem 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .invite-btn,
+    .copy-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .invite-btn {
+      border-radius: 44rem;
+      background: radial-gradient(
+          87.68% 87.68% at 95.36% 14.36%,
+          #ffd840 0%,
+          #f3acff 55.86%,
+          #8aecff 100%
+        )
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+      height: 48rem;
+      width: 282rem;
+      font-family: Urbanist;
+      font-size: 16rem;
+      font-weight: 700;
+      letter-spacing: 0.2rem;
+      color: #000;
+      margin-right: 12rem;
+    }
+    .copy-btn {
+      width: 48rem;
+      height: 48rem;
+      border-radius: 28rem;
+      background: radial-gradient(
+          87.68% 87.68% at 95.36% 14.36%,
+          #ffd840 0%,
+          #f3acff 55.86%,
+          #8aecff 100%
+        )
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+      > img {
+        width: 16rem;
+      }
+    }
+  }
+
+  .list {
+    height: 400px;
+    background-color: red;
+    overflow-y: auto;
+    .list-item {
+      border-bottom: 1px solid #2c2f3a;
+    }
+  }
+
+  
+  .zoomAnimate{
+    animation-name: zoomR;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+}

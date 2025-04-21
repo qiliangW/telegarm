@@ -1,0 +1,8 @@
+.effect-link {
+  font-size: 15px;
+  color: #0c9560;
+  &.disabled {
+    color: #666; // 灰色
+    cursor: not-allowed; // 禁用鼠标点击效果
+  }
+}

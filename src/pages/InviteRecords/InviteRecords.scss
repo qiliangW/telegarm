@@ -1,0 +1,136 @@
+.invite-records-ds-outer{
+    .invite-records-ds-wrap{
+        padding:0 18rem;
+    }
+     .invite-reward-ii-wrap{
+        height:178rem;
+        position: relative;
+        .top-tit-wrap{
+            display: flex;
+            justify-content: center;
+            .tit{
+                background: radial-gradient(87.68% 87.68% at 95.36% 14.36%, #FFD840 0%, #F3ACFF 55.86%, #8AECFF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+                width: 288rem;
+                height:142rem;
+                line-height: 34rem;
+                border-radius: 25rem;
+                font-family: Urbanist;
+                font-size: 16rem;
+                font-weight: 700;
+                display:inline-flex;
+                justify-content: center;
+                color:#000;
+            }
+        }
+
+        .invite-reward-wrap{
+            position:absolute;
+            width:100%;
+            height:142rem;
+            position: absolute;
+            bottom:0;
+            left:50%;
+            transform: translate(-50%,0);
+            background: rgba(32, 35, 42, 1);
+            border: 1rem solid rgba(242, 173, 255, 1);
+            border-radius:25rem;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            .num,
+            .unit,
+            .invite-num{
+                @include text-radial-gradient; 
+            }
+
+            .invite-info{
+                .icon{
+                    height:30rem;
+                }
+                .num{
+                    margin-left:12rem;
+                    font-family: Urbanist;
+                    font-size: 48rem;
+                    font-weight: 700;
+                   
+
+                    background: radial-gradient(144.49% 119.36% at 105.68% 31.4%, #FFD840 0%, #F3ACFF 55.86%, #8AECFF 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+
+                }
+                .unit{
+                    margin-left:10rem;
+                    font-family: Urbanist;
+                    font-size: 14rem;
+                    font-weight: 100;
+                    
+                    
+                    background: radial-gradient(144.49% 119.36% at 105.68% 31.4%, #FFD840 0%, #F3ACFF 55.86%, #8AECFF 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            .invite-num{
+                position: absolute;
+                font-family: Urbanist;
+                font-size: 14rem;
+                font-weight: 100;
+                right:25rem;
+                bottom:13rem;
+                
+                background: radial-gradient(144.49% 119.36% at 105.68% 31.4%, #FFD840 0%, #F3ACFF 55.86%, #8AECFF 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                
+            }
+        }
+    }
+
+    .invite-records-lists-wrap{
+        padding:34rem 6rem 10rem;
+        .item-wrap{
+            border-bottom:1rem solid rgba(53, 56, 63, 0.5);
+            height:64rem;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:0 17rem 6rem;
+            .l{
+                .name,
+                .address{
+                    font-family: Urbanist;
+                    color:#fff;
+                    max-width:210rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .name{
+                    font-size: 15rem;
+                    font-weight: 700;
+                    line-height: 18rem;
+                }
+                .address{
+                    font-size: 12rem;
+                    font-weight: 600;
+                    line-height: 16rem;
+                    letter-spacing: 0.17rem;
+                    padding-top:5rem;
+                }
+            }
+            .num{
+                font-family: Urbanist;
+                font-size: 14rem;
+                font-weight: 700;
+                line-height: 1;
+                letter-spacing: 0.17rem;
+                color:#fff;
+            }
+        }
+    }
+
+}

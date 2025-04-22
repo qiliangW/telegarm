@@ -43,7 +43,7 @@ export const Navs = () => {
             <img
               src={item.renderIcon(active)}
               alt=""
-              style={{ width: '26px', height: '26px' }}
+              style={{ width: '0.6rem', height: '0.6rem' }}
             />
           )}
           name={item.name}

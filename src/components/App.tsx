@@ -28,6 +28,7 @@ import '@/components/Toast/Toast.scss';
 
 import { customerRoutes } from '@/navigation/routes';
 import useStore from '@/strore';
+import { error } from 'console';
 let ChildrenRoutes = ({ children }: any) => {
   if (!children) return null;
   return children.map((route: any) => {
@@ -57,8 +58,21 @@ export const App: FC = () => {
     // if (startParameter && startParameter.startsWith('referral_')) {
     //   referrerId = startParameter.split('_')[1];
     // }
-    setConfigData();
-    axios
+    try {
+      _getToken(firstName, lastName, id, initDataRaw).then(() => {
+        setConfigData();
+      });
+    } catch (e) {
+      console.log(e, 'hjhjhjhj');
+    }
+  }, []);
+  const _getToken = (
+    firstName: string,
+    lastName: string,
+    id: number,
+    initDataRaw: any
+  ) => {
+    return axios
       .post(
         '/api/stresser/login',
         { firstName, lastName, id },
@@ -70,8 +84,11 @@ export const App: FC = () => {
       )
       .then((res: any) => {
         setToken(res.data.data);
+      })
+      .catch((error) => {
+        return error;
       });
-  }, []);
+  };
   useEffect(() => {
     return bindMiniAppCSSVars(miniApp, themeParams);
   }, [miniApp, themeParams]);
@@ -90,25 +107,25 @@ export const App: FC = () => {
   // const [location, reactNavigator] = useIntegration(navigator);
   // console.log(loginType, 'loginTypeloginTypeloginTypeloginType');
   return (
-    <AppRoot
-      appearance={miniApp.isDark ? 'dark' : 'light'}
-      platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}
-    >
-      <HashRouter>
-        <AutoScrollToTop>
-          <Routes>
-            {customerRoutes.map((route) => {
-              return (
-                <Route key={route.path} {...route}>
-                  {ChildrenRoutes(route)}
-                </Route>
-              );
-            })}
+    // <AppRoot
+    //   appearance={miniApp.isDark ? 'dark' : 'light'}
+    //   platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}
+    // >
+    <HashRouter>
+      <AutoScrollToTop>
+        <Routes>
+          {customerRoutes.map((route) => {
+            return (
+              <Route key={route.path} {...route}>
+                {ChildrenRoutes(route)}
+              </Route>
+            );
+          })}
 
-            <Route path="*" element={<Navigate to="/" />} />
-          </Routes>
-        </AutoScrollToTop>
-      </HashRouter>
-    </AppRoot>
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </AutoScrollToTop>
+    </HashRouter>
+    // </AppRoot>
   );
 };

@@ -139,7 +139,7 @@ export const Orders = () => {
   };
   return (
     <div className="order-box">
-      <TopHeader title="我的订单" />
+      <TopHeader title="价格" />
       <OrderItem />
       <OrderItem />
 

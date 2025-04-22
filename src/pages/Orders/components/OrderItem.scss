@@ -3,42 +3,78 @@
   border-radius: 16px;
 
   margin-top: 16px;
-  padding: 0 16px;
-  .order-title {
-    height: 62px;
+  //padding: 0 16px;
+  .order-name {
+    height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 16px;
-    border-bottom: 1px solid #2f3042;
-    & > span:nth-child(2) {
-      // 针对第二个 span 的样式
-      color: #00d676;
-      font-size: 14px;
-    }
+    //  border-bottom: 1px solid #2f3042;
+    // & > span:nth-child(2) {
+    //   // 针对第二个 span 的样式
+    //   color: #00d676;
+    //   font-size: 14px;
+    // }
 
-    .status-pending {
-      color: #f39c12 !important; // 待付款状态的颜色
-      font-weight: bold;
-    }
+    // .status-pending {
+    //   color: #f39c12 !important; // 待付款状态的颜色
+    //   font-weight: bold;
+    // }
 
-    .status-cancelled {
-      color: #e74c3c !important; // 已取消状态的颜色
-      font-weight: bold;
-    }
+    // .status-cancelled {
+    //   color: #e74c3c !important; // 已取消状态的颜色
+    //   font-weight: bold;
+    // }
 
-    .status-confirming {
-      color: #3498db !important; // 待确认状态的颜色
-      font-weight: bold;
-    }
+    // .status-confirming {
+    //   color: #3498db !important; // 待确认状态的颜色
+    //   font-weight: bold;
+    // }
 
-    .status-confirmed {
-      color: #2ecc71 !important; // 已确认状态的颜色
-      font-weight: bold;
-    }
+    // .status-confirmed {
+    //   color: #2ecc71 !important; // 已确认状态的颜色
+    //   font-weight: bold;
+    // }
   }
   .order-content {
-    padding: 15px 0;
+    padding: 0 !important;
+    .order-price {
+      // height: 100px;
+      background-color: #e0edcf !important;
+      padding: 20px 20px 0;
+      color: #74bb0f !important;
+      p {
+        text-align: center;
+      }
+      .price {
+        margin-bottom: 14px;
+        font-weight: 700 !important;
+      }
+      .price-duration {
+        padding-bottom: 25px;
+        overflow: visible;
+        font-size: 12px;
+      }
+    }
+    .block-content {
+      transition: opacity 0.25s ease-out;
+      width: 100%;
+      margin: 0 auto;
+      padding: 25px 25px 0;
+      overflow-x: visible;
+      .fs-s {
+        padding-top: 8px;
+        p {
+          strong {
+            font-weight: 700;
+          }
+          font-size: 12px;
+          text-align: center;
+          margin-bottom: 35px;
+        }
+      }
+    }
     .order-content-item {
       display: flex;
       align-items: center;
@@ -51,13 +87,13 @@
         margin-bottom: 0;
       }
     }
-    border-bottom: 1px solid #2f3042;
+    //  border-bottom: 1px solid #2f3042;
   }
   .order-oprate-btn {
     height: 67px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center !important;
 
     .order-btn-text {
       font-family: PingFangSC, PingFang SC;

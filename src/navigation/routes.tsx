@@ -24,13 +24,13 @@ interface Route {
 }
 
 export const customerRoutes: Route[] = [
-  { path: '/', Component: Login }, //开屏页
+  // { path: '/', Component: Login }, //开屏页
   { path: '/createOrder', Component: CreateOrder }, //新增订单
   { path: '/createPlan', Component: CreatePlan },
   { path: '/updateEmail', Component: ChangeEmail },
   { path: '/effectiveness', Component: Effectiveness },
   {
-    path: '/home',
+    path: '/',
     Component: HomeLayout,
     children: [
       { path: '', Component: Home, title: 'home' },

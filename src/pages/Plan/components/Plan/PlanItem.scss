@@ -1,8 +1,92 @@
-.effect-link {
-  font-size: 15px;
-  color: #0c9560;
-  &.disabled {
-    color: #666; // 灰色
-    cursor: not-allowed; // 禁用鼠标点击效果
+// .effect-link {
+//   font-size: 15px;
+//   color: #0c9560;
+//   &.disabled {
+//     color: #666; // 灰色
+//     cursor: not-allowed; // 禁用鼠标点击效果
+//   }
+// }
+.plan-box-item {
+  margin-top: 16px;
+  background: #222339;
+  border-radius: 16px;
+  --rv-tab-text-color: #afafcd;
+  --rv-tab-active-text-color: #00d676 !important;
+  --rv-tabs-bottom-bar-color: #00d676 !important;
+  --rv-tabs-nav-background-color: #222339 !important;
+  // --rv-cell-background-color: none;
+  // .rv-tab--active {
+  //   background-color: #00d676;
+  // }
+  padding: 0 16px;
+  .css-1wy0on6 {
+    display: none;
   }
+  .plan-content {
+    // height: 80% !important;
+  }
+  .rv-tabs__content {
+    margin-top: 20px;
+    // height: 80% !important;
+    // background: red;
+  }
+  .plan-box-content {
+    .content-item {
+      p {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+      padding-bottom: 20px;
+      .rv-cell {
+        padding-top: 0.16667rem;
+        padding-bottom: 0.16667rem;
+      }
+      .slider-box {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .header-title {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .custom-field {
+    /* 基础样式 */
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff; /* 文字颜色 */
+    background-color: transparent;
+    border: 1px solid #ebedf0; /* 默认边框颜色 */
+    border-radius: 4px;
+    outline: none; /* 移除默认聚焦轮廓 */
+    transition: border-color 0.3s; /* 过渡效果 */
+
+    /* 可选：深色背景适配 */
+    background-color: #222339;
+    /* 聚焦状态 */
+    &:focus-within {
+      border-color: #ff5722; /* 聚焦时的边框颜色 */
+    }
+    .rv-input__control {
+      color: #fff !important;
+    }
+    .rv-input__control::placeholder {
+      color: #aaa;
+      opacity: 1;
+    }
+  }
+
+  // /* 占位符文字样式 */
+  // .custom-field::placeholder {
+  //   color: #aaa; /* 浅灰色占位符 */
+  //   opacity: 1; /* 确保 Firefox 中也能正常显示 */
+  // }
 }

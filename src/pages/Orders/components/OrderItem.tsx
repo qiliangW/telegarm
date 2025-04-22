@@ -127,50 +127,39 @@ export default function OrderItem(props: any) {
   };
   return (
     <div className="order-box-item">
-      <div className="order-title">
-        <span>{dayjs(props.CreatedAt).format('YYYY-MM-DD HH:mm:ss')}</span>
-        <span className={statusClassMap[props.status]}>
-          {orderStatusMap[props.status]}
-        </span>
+      <div className="order-name">
+        <span>TEST</span>
       </div>
       <div className="order-content">
-        <p className="order-content-item">
-          <span>订单编号</span>
-          <span>{props.num}</span>
-        </p>
-        <p className="order-content-item">
-          <span>订单时长：</span>
-          <span>{props.duration} 小时</span>
-        </p>
-        <p className="order-content-item">
-          <span>订单金额：</span>
-          <span>{props.amount} U</span>
-        </p>
-        <p className="order-content-item">
-          <span>支付金额：</span>
-          <span>{props.payAmount} U</span>
-        </p>
-        {/* <p className="order-content-item">
-          <span>交易哈希：</span>
-          <span>
-            {props.hash
-              ? `${props.hash.substring(0, 6)}...${props.hash.substring(
-                  props.hash.length - 6
-                )}`
-              : ''}
-          </span>
-          {renderCopyIcon()}
-        </p> */}
-        <p className="order-content-item">
-          <span>完成时间：</span>
-          <span>
-            {props.completionTime
-              ? dayjs(props.completionTime).format('YYYY-MM-DD HH:mm:ss')
-              : ''}
-          </span>
-        </p>
+        <div className="order-price">
+          <p className="price">3$</p>
+          <p className="price-duration">per1Days</p>
+        </div>
+        <div className="block-content">
+          <div className="fs-s">
+            <p>
+              <strong>120 </strong>
+              Seconds
+            </p>
+            <p>
+              <strong>2 </strong> Concurrent
+            </p>
+            <p>
+              <strong>PARTIAL </strong> Support
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="order-oprate-btn">{getBtnsByStatus()}</div>
+      <div className="order-oprate-btn">
+        <span
+          className="order-btn-text"
+          onClick={() => {
+            _handleOprate('购买');
+          }}
+        >
+          购买
+        </span>
+      </div>
     </div>
   );
 }

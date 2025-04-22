@@ -12,28 +12,28 @@ export const Orders = () => {
   const [pageSize] = useState(5); // 每页加载的数量
   const [tabData, setTabData] = useState<any>({}); // 存储每个标签页的状态
   const utils = initUtils();
-  const orderList = [
-    {
-      id: 0,
-      name: '全部',
-    },
-    {
-      id: 1,
-      name: '待支付',
-    },
-    {
-      id: 3,
-      name: '已超时',
-    },
-    {
-      id: 2,
-      name: '已支付',
-    },
-    {
-      id: 5,
-      name: '已取消',
-    },
-  ];
+  // const orderList = [
+  //   {
+  //     id: 0,
+  //     name: '全部',
+  //   },
+  //   {
+  //     id: 1,
+  //     name: '待支付',
+  //   },
+  //   {
+  //     id: 3,
+  //     name: '已超时',
+  //   },
+  //   {
+  //     id: 2,
+  //     name: '已支付',
+  //   },
+  //   {
+  //     id: 5,
+  //     name: '已取消',
+  //   },
+  // ];
 
   const updateOrderInTab = (orderId: number, updatedData: any) => {
     setTabData((prev: any) => {
@@ -111,15 +111,15 @@ export const Orders = () => {
     // setLoading(false);
   };
   useEffect(() => {
-    const initialData: any = {};
-    orderList.forEach((tab) => {
-      initialData[tab.id] = {
-        page: 1,
-        finished: false,
-        orders: [],
-      };
-    });
-    setTabData(initialData);
+    // const initialData: any = {};
+    // orderList.forEach((tab) => {
+    //   initialData[tab.id] = {
+    //     page: 1,
+    //     finished: false,
+    //     orders: [],
+    //   };
+    // });
+    // setTabData(initialData);
   }, []);
   const changeTab = (tab: any) => {
     console.log(tab);
@@ -139,8 +139,11 @@ export const Orders = () => {
   };
   return (
     <div className="order-box">
-      <TopHeader title="我的订单" showBtn={true} btnText="新建订单" />
-      <Tabs
+      <TopHeader title="我的订单" />
+      <OrderItem />
+      <OrderItem />
+
+      {/* <Tabs
         active={activeTab}
         defaultActive={1}
         onChange={changeTab}
@@ -169,7 +172,7 @@ export const Orders = () => {
             </div>
           </Tabs.TabPane>
         ))}
-      </Tabs>
+      </Tabs> */}
     </div>
   );
 };

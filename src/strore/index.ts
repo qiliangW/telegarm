@@ -16,7 +16,7 @@ const useStore: any = create((set: any) => ({
   gamePlaying: false, //游戏进行中
   startGame: false,
   userInfo: {},
-  token: localStorage.getItem('userToken'),
+  token: sessionStorage.getItem('userToken') || '',
   loginType: localStorage.getItem('loginType'),
   setLoginType: (loginType: string) => {
     console.log(loginType);
@@ -33,9 +33,9 @@ const useStore: any = create((set: any) => ({
   setGamePlaying: (gamePlaying) => set(() => ({ gamePlaying })),
 
   setToken: (token: string) => {
-    token && localStorage.setItem('userToken', token);
-    !token && localStorage.removeItem('userToken');
-    set(() => ({ token }));
+    token && sessionStorage.setItem('userToken', token);
+    !token && sessionStorage.removeItem('userToken');
+    token && set(() => ({ token }));
   },
   setUserInfo: (userInfo: any) => set(() => ({ userInfo })),
   setCurrentLevel: (currentLevel: any) => {

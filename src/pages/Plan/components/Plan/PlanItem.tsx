@@ -1,100 +1,71 @@
 import { type FC, useEffect, useState } from 'react';
-import dayjs from 'dayjs';
-import { getpingData } from '@/api/ping';
+import Select from 'react-select';
+import { Tabs, Field, Slider, Button } from 'react-vant';
 import { updatePlan } from '@/api/plan';
 import { useNavigate } from 'react-router-dom';
+import { PlanTable } from '../PlanTable';
 import './PlanItem.scss';
 export default function OrderItem(props: any) {
   const nanigate = useNavigate();
-  const planStatusMap: any = {
-    1: '待执行',
-    3: '执行中',
-    4: '已执行',
-    2: '已取消',
-    5: '未成功',
-  };
-  const layerMap: any = {
-    1: 'L4',
-    2: 'L7',
-  };
-  const _handleOprate = async (status: string) => {
-    if (status === '再次计划') {
-      nanigate('/createPlan', {
-        state: {
-          layerData: props.protocol.layer,
-          on: props.protocol.on,
-          duration: props.duration,
-          param: props.protocol.param,
-          protocol_id: props.protocol_id,
-        },
-      });
-    }
-    if (status === '取消计划') {
-      try {
-        await updatePlan({ ...props, status: '2' });
-        props.onDelete && props.onDelete(props);
-      } catch (e) {}
-    }
-  };
-  const getBtnsByStatus = () => {
-    const { status } = props;
-    if (status == 1) {
-      return (
-        <>
-          <span
-            className="order-btn-text"
-            onClick={() => {
-              _handleOprate('取消计划');
-            }}
-          >
-            取消计划
-          </span>
-        </>
-      );
-    } else if (status == 2) {
-      return (
-        <>
-          <span
-            className="order-btn-text"
-            onClick={() => {
-              _handleOprate('再次计划');
-            }}
-          >
-            再次计划
-          </span>
-        </>
-      );
-    } else if (status == 3) {
-      return null;
-    } else if (status == 4) {
-      return (
-        <>
-          <span
-            className="order-btn-text"
-            onClick={() => {
-              _handleOprate('再次计划');
-            }}
-          >
-            再次计划
-          </span>
-        </>
-      );
-    } else if (status == 5) {
-      return (
-        <span
-          className="order-btn-text"
-          onClick={() => {
-            _handleOprate('再次计划');
-          }}
-        >
-          再次计划
-        </span>
-      );
-    }
-  };
-  // useEffect(() => {
-  //   getEffect();
-  // }, []);
+  const [isFocused, setIsFocused] = useState(false);
+  const groupedOptions = [
+    {
+      label: '水果', // 分组名称
+      options: [
+        { value: 'apple', label: '苹果' },
+        { value: 'banana', label: '香蕉' },
+      ],
+    },
+    {
+      label: '蔬菜',
+      options: [
+        { value: 'carrot', label: '胡萝卜' },
+        { value: 'tomato', label: '番茄' },
+      ],
+    },
+    {
+      label: '蔬菜',
+      options: [
+        { value: 'carrot', label: '胡萝卜' },
+        { value: 'tomato', label: '番茄' },
+      ],
+    },
+    {
+      label: '蔬菜',
+      options: [
+        { value: 'carrot', label: '胡萝卜' },
+        { value: 'tomato', label: '番茄' },
+      ],
+    },
+    {
+      label: '蔬菜',
+      options: [
+        { value: 'carrot', label: '胡萝卜' },
+        { value: 'tomato', label: '番茄' },
+      ],
+    },
+    {
+      label: '蔬菜',
+      options: [
+        { value: 'carrot', label: '胡萝卜' },
+        { value: 'tomato', label: '番茄' },
+      ],
+    },
+    {
+      label: '蔬菜',
+      options: [
+        { value: 'carrot', label: '胡萝卜' },
+        { value: 'tomato', label: '番茄' },
+      ],
+    },
+    {
+      label: '蔬菜',
+      options: [
+        { value: 'carrot', label: '胡萝卜' },
+        { value: 'tomato', label: '番茄' },
+      ],
+    },
+  ];
   const getEffect = () => {
     if (!props.execNum) return;
     nanigate('/effectiveness', {
@@ -105,51 +76,139 @@ export default function OrderItem(props: any) {
     // getpingData({});
   };
   return (
-    <div className="order-box-item">
-      <div className="order-title">
-        <span>{dayjs(props.CreatedAt).format('YYYY-MM-DD HH:mm:ss')}</span>
-        <span>{planStatusMap[props.status]}</span>
+    <>
+      <div className="plan-box-item">
+        <div className="header-title">Attack Hub</div>
+        <div className="plan-content">
+          <Tabs type="card">
+            <Tabs.TabPane title="Layer4">
+              <div className="plan-box-content">
+                <div className="content-item">
+                  <p>Attack Method</p>
+                  <Select
+                    styles={{
+                      control: (baseStyles, state) => ({
+                        ...baseStyles,
+                        fontSize: '12px',
+                        backgroundColor: '#222339',
+                      }),
+                      singleValue: (provided) => ({
+                        ...provided,
+                        color: 'white', // 修改选中项的显示文字颜色
+                        paddingLeft: '10px',
+                      }),
+                      option: (provided, state) => ({
+                        ...provided,
+                        fontSize: '12px',
+                        backgroundColor: state.isSelected
+                          ? '#4CAF50'
+                          : '222339', // 选中时绿色，默认白色
+                        color: state.isSelected ? 'white' : 'black', // 选中时文字白色
+                        ':active': {
+                          backgroundColor: 'red', // 点击时的背景色
+                        },
+                      }),
+                    }}
+                    isSearchable={false}
+                    options={groupedOptions}
+                    menuPlacement="auto" // 自动选择下拉方向
+                  />
+                </div>
+                <div className="content-item">
+                  <p>Address</p>
+                  <Field className="custom-field" />
+                </div>
+                <div className="content-item">
+                  <p>Port</p>
+                  <Field className="custom-field" />
+                </div>
+                <div className="content-item">
+                  <p>Time</p>
+                  <div className="slider-box">
+                    <Slider barHeight={6} buttonSize={'16px'} />
+                  </div>
+                  <Field className="custom-field" />
+                </div>
+                <div className="content-item">
+                  <p>Concurrents</p>
+                  <div className="slider-box">
+                    <Slider barHeight={6} buttonSize={'16px'} />
+                  </div>
+                  <Field className="custom-field" />
+                </div>
+                <div className="content-item">
+                  <Button type="primary" size="small">
+                    Send Attack
+                  </Button>
+                </div>
+              </div>
+            </Tabs.TabPane>
+            <Tabs.TabPane title="Layer7">
+              {' '}
+              <div className="plan-box-content">
+                <div className="content-item">
+                  <p>Attack Method</p>
+                  <Select
+                    styles={{
+                      control: (baseStyles, state) => ({
+                        ...baseStyles,
+                        fontSize: '12px',
+                        backgroundColor: '#222339',
+                      }),
+                      singleValue: (provided) => ({
+                        ...provided,
+                        color: 'white', // 修改选中项的显示文字颜色
+                        paddingLeft: '10px',
+                      }),
+                      option: (provided, state) => ({
+                        ...provided,
+                        fontSize: '12px',
+                        backgroundColor: state.isSelected
+                          ? '#4CAF50'
+                          : '222339', // 选中时绿色，默认白色
+                        color: state.isSelected ? 'white' : 'black', // 选中时文字白色
+                        ':active': {
+                          backgroundColor: 'red', // 点击时的背景色
+                        },
+                      }),
+                    }}
+                    isSearchable={false}
+                    options={groupedOptions}
+                    menuPlacement="auto" // 自动选择下拉方向
+                  />
+                </div>
+                <div className="content-item">
+                  <p>Address</p>
+                  <Field className="custom-field" />
+                </div>
+                <div className="content-item">
+                  <p>Port</p>
+                  <Field className="custom-field" />
+                </div>
+                <div className="content-item">
+                  <p>Time</p>
+                  <div className="slider-box">
+                    <Slider barHeight={6} buttonSize={'16px'} />
+                  </div>
+                  <Field className="custom-field" />
+                </div>
+                <div className="content-item">
+                  <p>Concurrents</p>
+                  <div className="slider-box">
+                    <Slider barHeight={6} buttonSize={'16px'} />
+                  </div>
+                  <Field className="custom-field" />
+                </div>
+                <div className="content-item">
+                  <Button type="primary" size="small">
+                    Send Attack
+                  </Button>
+                </div>
+              </div>
+            </Tabs.TabPane>
+          </Tabs>
+        </div>
       </div>
-      <div className="order-content">
-        <p className="order-content-item">
-          <span>计划编号</span>
-          <span>{props.num}</span>
-        </p>
-        <p className="order-content-item">
-          <span>计划类型：</span>
-          <span>{layerMap[props.protocol.layer]}</span>
-        </p>
-        <p className="order-content-item">
-          <span>计划协议：</span>
-          <span>{props.protocol.name}</span>
-        </p>
-        <p className="order-content-item">
-          <span>计划参数：</span>
-          <span>{JSON.stringify(props.protocol.param)}</span>
-        </p>
-        <p className="order-content-item">
-          <span>计划时长：</span>
-          <span>{props.duration} 小时</span>
-        </p>
-        <p className="order-content-item">
-          <span>完成时间：</span>
-          <span>
-            {props.completetime
-              ? dayjs(props.completetime).format('YYYY-MM-DD HH:mm:ss')
-              : '--'}
-          </span>
-        </p>
-        <p className="order-content-item">
-          <span>计划效果：</span>
-          <span
-            className={`effect-link ${!props.execNum ? 'disabled' : ''}`}
-            onClick={getEffect}
-          >
-            <span>执行效果图</span>
-          </span>
-        </p>
-      </div>
-      <div className="order-oprate-btn">{getBtnsByStatus()}</div>
-    </div>
+    </>
   );
 }

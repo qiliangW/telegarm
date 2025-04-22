@@ -46,9 +46,9 @@ export default defineConfig({
     host: true,
     proxy: {
       '/api': {
-        target: 'https://zyg.su/api',
+        target: 'http://47.254.255.198:8888/',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
+        rewrite: (path) => path.replace(/^\/api/, '/api'),
       },
     },
   },

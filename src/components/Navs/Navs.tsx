@@ -11,7 +11,7 @@ import {
   useLocation,
   useNavigate,
 } from 'react-router-dom';
-import { navConfigForCustom, navConfigForProvider } from '@/config/navConfig';
+import { navConfigForCustom } from '@/config/navConfig';
 import useStore from '@/strore';
 import { Tabbar } from 'react-vant';
 import './Navs.scss';
@@ -26,8 +26,7 @@ export const Navs = () => {
   const navigate = useNavigate(); //react-router-dom
   const loginType = useStore((state: any) => state.loginType);
   // 根据用户类型加载导航配置
-  const navConfig =
-    loginType === 'Custom' ? navConfigForCustom : navConfigForProvider;
+  const navConfig = navConfigForCustom;
   const switchPages = (val: any) => {
     setName(val);
     navigate(val);

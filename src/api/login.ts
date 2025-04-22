@@ -16,7 +16,7 @@ export function unlockHealer(params: any) {
 }
 //用户方登录
 export function userLogin(params: any) {
-  return request.post('/stress/loginConsumer', params);
+  return request.post('/stresser/login', params);
 }
 export function providerLogin(params: any) {
   return request.post('/stress/loginProvider', params);

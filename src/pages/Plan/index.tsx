@@ -3,7 +3,8 @@ import { Tabs, List } from 'react-vant';
 import PlanItem from './components/Plan/PlanItem';
 import { getPlanList } from '@/api/plan';
 import { TopHeader } from '@/components/TopHeader/TopHeader';
-import { getpingData } from '@/api/ping';
+import { PlanTable } from './components/PlanTable';
+import './index.scss';
 export const Plan = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [tabData, setTabData] = useState<any>({}); // 存储每个标签页的状态
@@ -92,9 +93,12 @@ export const Plan = () => {
     });
   };
   return (
-    <div className="order-box">
-      <TopHeader title="我的计划" showBtn={true} btnText="新建计划" />
-      <Tabs
+    <div className="plan-box">
+      <TopHeader title="面板" />
+      <PlanItem />
+
+      <PlanTable />
+      {/* <Tabs
         active={activeTab}
         defaultActive={1}
         onChange={changeTab}
@@ -119,7 +123,7 @@ export const Plan = () => {
             </div>
           </Tabs.TabPane>
         ))}
-      </Tabs>
+      </Tabs> */}
     </div>
   );
 };

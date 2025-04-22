@@ -3,7 +3,7 @@
   border-radius: 16px;
 
   margin-top: 16px;
-  padding: 0 16px;
+  /* padding: 0 16px; */
   .order-title {
     height: 62px;
     display: flex;

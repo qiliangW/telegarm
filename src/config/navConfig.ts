@@ -14,50 +14,50 @@ import executeTabIcon from '@/assets/imgs/execute-tab-icon.png';
 import executeTabActiveIcon from '@/assets/imgs/execute-tab-active.png';
 export const navConfigForCustom = [
   {
-    name: '/home',
+    name: '/',
     label: '首页',
     renderIcon: (active: boolean) =>
       active ? homeTabActivePath : homeTabIconPath,
   },
   {
-    name: '/home/orders',
-    label: '订单',
+    name: '/orders',
+    label: '价格',
     renderIcon: (active: boolean) =>
       active ? orderTabActivePath : orderTabIconPath,
   },
   {
-    name: '/home/plan',
-    label: '我的计划',
+    name: '/plan',
+    label: '面板',
     renderIcon: (active: boolean) => (active ? palnTabActiveIcon : planTabIcon),
   },
   {
-    name: '/home/user',
+    name: '/user',
     label: '我的',
     renderIcon: (active: boolean) => (active ? userTabActive : userTabIcon),
   },
 ];
 
-export const navConfigForProvider = [
-  {
-    name: '/home',
-    label: '首页',
-    renderIcon: (active: boolean) =>
-      active ? homeTabActivePath : homeTabIconPath,
-  },
-  {
-    name: '/home/way',
-    label: '我的方式',
-    renderIcon: (active: boolean) => (active ? wayTabActiveIcon : wayTabIcon),
-  },
-  {
-    name: '/home/execute',
-    label: '我的执行',
-    renderIcon: (active: boolean) =>
-      active ? executeTabActiveIcon : executeTabIcon,
-  },
-  {
-    name: '/home/user',
-    label: '我的',
-    renderIcon: (active: boolean) => (active ? userTabActive : userTabIcon),
-  },
-];
+// export const navConfigForProvider = [
+//   {
+//     name: '/home',
+//     label: '首页',
+//     renderIcon: (active: boolean) =>
+//       active ? homeTabActivePath : homeTabIconPath,
+//   },
+//   {
+//     name: '/home/way',
+//     label: '我的方式',
+//     renderIcon: (active: boolean) => (active ? wayTabActiveIcon : wayTabIcon),
+//   },
+//   {
+//     name: '/home/execute',
+//     label: '我的执行',
+//     renderIcon: (active: boolean) =>
+//       active ? executeTabActiveIcon : executeTabIcon,
+//   },
+//   {
+//     name: '/home/user',
+//     label: '我的',
+//     renderIcon: (active: boolean) => (active ? userTabActive : userTabIcon),
+//   },
+// ];
